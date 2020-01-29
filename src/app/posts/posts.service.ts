@@ -78,7 +78,6 @@ export class PostsService {
         .subscribe(response => {
           const updatedPosts = [...this.posts];
           const oldPostIndex = updatedPosts.findIndex(p => p.id === id);
-          console.dir(response);
           const post: Post = {
             id,
             title,
